@@ -25,7 +25,7 @@ set(SRC_DIR ${PROJECT_SOURCE_DIR}/src)
 add_executable(password-generator ${SRC_DIR}/main.c ${CMAKE_CURRENT_BINARY_DIR}/res/res.c)
 add_dependencies(password-generator resources)
 add_definitions(${GTK_CFLAGS_OTHER})
-include_directories(${GTK_INCLUDE_DIRS})
+include_directories(${GTK_INCLUDE_DIRS} ${SRC_DIR})
 link_directories(${GTK_LIBRARY_DIRS})
 target_link_libraries(password-generator ${GTK_LIBRARIES})
 

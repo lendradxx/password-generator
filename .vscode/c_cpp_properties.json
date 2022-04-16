@@ -3,6 +3,7 @@
         {
             "name": "linux-gcc-gtk3",
             "includePath": [
+                "${workspaceFolder}/**",
                 "/usr/include/gtk-3.0",
                 "/usr/include/pango-1.0",
                 "/usr/include/glib-2.0",
