@@ -1,4 +1,5 @@
 #include <gtk/gtk.h>
+#include <stdbool.h>
 #include "components/menubars.h"
 #include "utils/core.h"
 
@@ -10,8 +11,8 @@ void launchApp(GtkApplication* app, gpointer userData) {
 
     // Setup window
     gtk_window_set_title(GTK_WINDOW(window), "Password Generator");
-    gtk_window_set_default_size(GTK_WINDOW(window), 812, 412);
     gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
+    gtk_window_set_resizable(GTK_WINDOW(window), false);
     gtk_application_add_window(app, GTK_WINDOW(window));
     initMenubars(window, builder);
 
