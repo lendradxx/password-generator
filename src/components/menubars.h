@@ -1,5 +1,5 @@
-#ifndef MENUBAR_H
-#define MENUBAR_H
+#ifndef MENUBARS_H
+#define MENUBARS_H
 
 #include <gtk/gtk.h>
 #include "utils/core.h"
