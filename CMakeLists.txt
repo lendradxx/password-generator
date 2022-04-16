@@ -12,7 +12,7 @@ project(
     VERSION 0.0.1 
     LANGUAGES C
     HOMEPAGE_URL "https://github.com/lendradxx/password-generator.git"
-    DESCRIPTION "Some apps to create random password for you"
+    DESCRIPTION "Tool for create a random password"
 )
 
 # project configuration
@@ -46,7 +46,7 @@ add_custom_command(
 )
 
 # Embedding the resource files
-message(STATUS "Creating embeded file")
+message(STATUS "Embedding resource files...")
 make_directory(${CMAKE_CURRENT_BINARY_DIR}/res)
 add_custom_command(
     OUTPUT res/res.c
