@@ -16,6 +16,6 @@ App to create random password
 ```bash
 $ git clone https://github.com/lendradxx/password-generator.git
 $ cd password-generator
-$ ./configure.sh -b # or you can try ./configure.sh -h to see the options
-$ password-generator # you must execute ./configure.sh -i to install on your machine
+$ ./configure.sh -bai # or you can try ./configure.sh -h to see more options
+$ password-generator
 ```
