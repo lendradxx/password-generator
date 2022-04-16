@@ -149,7 +149,7 @@
                 <property name="can-focus">True</property>
                 <property name="margin-top">1</property>
                 <property name="resize-mode">immediate</property>
-                <property name="pixels-above-lines">4</property>
+                <property name="pixels-above-lines">3</property>
                 <property name="editable">False</property>
                 <property name="left-margin">5</property>
                 <property name="buffer">resultText</property>
