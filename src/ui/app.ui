@@ -87,6 +87,7 @@
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">False</property>
+                <property name="active">True</property>
                 <property name="draw-indicator">True</property>
               </object>
               <packing>
@@ -100,6 +101,7 @@
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">False</property>
+                <property name="active">True</property>
                 <property name="draw-indicator">True</property>
               </object>
               <packing>
@@ -108,7 +110,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="lengthPassword">
+              <object class="GtkEntry" id="LengthPassword">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="placeholder-text" translatable="yes">Password Length</property>
@@ -120,7 +122,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="generate-btn">
+              <object class="GtkButton" id="generateBtn">
                 <property name="label" translatable="yes">Generate</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
@@ -132,7 +134,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton">
+              <object class="GtkButton" id="copy-btn">
                 <property name="label" translatable="yes">Copy to Clipboard</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
@@ -144,7 +146,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkTextView">
+              <object class="GtkTextView" id="result-view">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="margin-top">1</property>

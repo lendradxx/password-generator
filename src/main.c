@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include "components/menubars.h"
 #include "utils/core.h"
+#include "components/sections.h"
 
 void launchApp(GtkApplication* app, gpointer userData) {
     GtkWidget* window;
@@ -15,6 +16,7 @@ void launchApp(GtkApplication* app, gpointer userData) {
     gtk_window_set_resizable(GTK_WINDOW(window), false);
     gtk_application_add_window(app, GTK_WINDOW(window));
     initMenubars(window, builder);
+    initSections(window, builder);
 
     // Show all widget
     gtk_widget_show_all(window);
